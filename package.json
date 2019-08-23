@@ -1,0 +1,44 @@
+{
+  "name": "healthy_habits",
+  "version": "1.0.0",
+  "description": "Healthy Habits is an application that helps a user start, manage and stay loyal to healthy habits. Part of the #30DaysOfCode initiative to consolidate my javascript skills",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KapsonLabs/healthy_habits.git"
+  },
+  "author": "Allan Katongole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KapsonLabs/healthy_habits/issues"
+  },
+  "homepage": "https://github.com/KapsonLabs/healthy_habits#readme",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "chalk": "2.4.2",
+    "express": "4.17.1",
+    "jquery": "3.4.1",
+    "morgan": "1.9.1",
+    "nodemon": "1.19.1",
+    "popper.js": "1.15.0"
+  },
+  "devDependencies": {
+    "eslint": "6.2.1",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": ["node_modules/**/node_modules"],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000 
+    }
+  }
+}
